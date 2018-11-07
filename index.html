@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="profileApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <a href="#!/edit-profile">Edit Profile</a>
+    <a href="#!/user-profile">User Profile</a>
+    <ng-view></ng-view>
+
+    <script src="https://code.angularjs.org/1.6.5/angular.js"></script>
+    <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
+    <script src="module/module.js"></script>
+    <script src="user-profile/profile-service.js"></script>
+    <script src="user-profile/userprofile.js"></script>
+    <script src="edit-profile/editprofile.js"></script>
+</body>
+</html>
