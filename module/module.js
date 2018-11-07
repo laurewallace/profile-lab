@@ -10,4 +10,5 @@ angular
             .when("/user-profile", {
                 template: "<user-profile></user-profile>"
             })
+            .otherwise({redirectTo: "/user-profile"})
     }])

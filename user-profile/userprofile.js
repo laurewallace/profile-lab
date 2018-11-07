@@ -3,10 +3,12 @@ const userProfile = {
     templateUrl: "user-profile/userprofile.html",
     controller: ["ProfileService", function(ProfileService) {
         const vm = this;
-        vm.profile = ProfileService.getInfo();
-        console.log(vm.profile)
+        vm.info = ProfileService.getInfo();
+        vm.loadEdit = () => {
+            ProfileService.loadEdit();
+        }
     }]
-}
+};
 
 
 angular

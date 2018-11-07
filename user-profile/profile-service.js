@@ -1,5 +1,5 @@
 "use strict";
-function ProfileService() {
+function ProfileService($location) {
     const self = this;
     self.info = {
         name: "Bitsy",
@@ -11,8 +11,12 @@ function ProfileService() {
         return self.info;
     }
 
-    self.saveInfo = () => {
-
+    self.setInfo = (newInfo) => {
+        self.info = newInfo;
+        $location.path("/user-profile")
+    }
+    self.loadEdit = () => {
+        $location.path("/edit-profile")
     }
 }
 

@@ -1,9 +1,13 @@
 "use strict";
 const editProfile = {
     templateUrl: "edit-profile/editprofile.html",
-    controller: [function() {
+    controller: ["ProfileService", function(ProfileService) {
         const vm = this;
-        
+        vm.info = angular.copy(ProfileService.getInfo());
+        console.log(vm.info)
+        vm.saveInfo = (newInfo) => {
+            ProfileService.setInfo(newInfo);
+        };
     }]
 }
 

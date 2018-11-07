@@ -1,0 +1,125 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #eee;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #1ECEFD;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(204,204,204,1)
+}
+
+img {
+    height: 400px;
+}
+
+.content {
+    position: relative;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
+}
+
+.name {
+    font-size: 30px;
+    margin: 20px 10px 0px 10px;
+}
+
+.contact {
+    color: lightgrey;
+    margin-top: 0;
+    margin-left: 10px
+}
+
+.bio {
+    margin-left: 10px;
+}
+
+.edit {
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: #505355;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px
+}
+
+form {
+    position: relative;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
+    background-color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+input {
+    padding: 14px;
+    margin: 5px 20px 20px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.heading {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    margin-right: 20px;
+    color: #505355;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 20px;
+    color: #1ECEFD;
+    font-weight: bold;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.save {
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: #505355;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px
+}
+
